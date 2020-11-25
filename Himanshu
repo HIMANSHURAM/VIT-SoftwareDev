@@ -1,0 +1,28 @@
+import java.util.*;
+import java.io.*;
+
+class Player{
+	String ID;
+	int tar;
+	public static void main(String[] args) throws IOException{
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		bw.write("Enter the number of Players \n");
+		bw.flush();
+		int n =Integer.parseInt(br.readLine());
+		bw.write("Enter the game Mode");
+		bw.flush();
+		String gMode1=br.readLine();
+		String gMode2=br.readLine();
+		if(gMode1.equals(gMode2)) {
+			bw.write("Opponent found \n");
+			bw.flush();
+			bw.write("Match will satrt in 3.. \n2.. \n1..");
+		}
+		
+	
+		}
+		
+	}
